@@ -36,7 +36,7 @@ add_executable(wanikani_reviews_icon
     ${CMAKE_CURRENT_SOURCE_DIR}/src/review_count.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/icons.cpp)
 
-jfc_generate_cmake_header()
+jfc_generate_build_info()
 
 target_include_directories(wanikani_reviews_icon PRIVATE
     "${PROJECT_BINARY_DIR}/generated_include/"

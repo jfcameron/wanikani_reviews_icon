@@ -1,7 +1,7 @@
 // © 2020 Joseph Cameron - All Rights Reserved
 
 #include <jfc/wanikani_reviews_icon/config.h>
-#include <wanikani_reviews_icon/buildinfo.h>
+#include <jfc/wanikani_reviews_icon/build_info.h>
 
 #include <jfc/storage/exception.h>
 #include <jfc/storage/store.h>

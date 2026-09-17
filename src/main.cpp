@@ -15,7 +15,7 @@
 #include <jfc/wanikani_reviews_icon/notification.h>
 #include <jfc/wanikani_reviews_icon/request.h>
 
-#include <wanikani_reviews_icon/buildinfo.h>
+#include <jfc/wanikani_reviews_icon/build_info.h>
 
 using namespace jfc::wanikani_reviews_icon;
 
@@ -129,12 +129,12 @@ int main(int argc, char *argv[]) {
 
             if (args[1] == "-h" || args[1] == "--help") {
                 std::cout
-                    << "=== " << wanikani_reviews_icon_BuildInfo_ProjectName << " ===" << "\n" 
+                    << "=== " << jfc::wanikani_reviews_icon::build_info::project_name << " ===" << "\n" 
                     << "a tray icon application that notifies you of new reviews on your wanikani account.\n"
                     << "=== build info ===\n"
-                    << "project remote: " << wanikani_reviews_icon_BuildInfo_Git_Remote_URL << "\n"
-                    << "git hash: " << wanikani_reviews_icon_BuildInfo_Git_Commit << "\n"
-                    << "build date: " << wanikani_reviews_icon_BuildInfo_Git_Date << "\n";
+                    << "project remote: " << jfc::wanikani_reviews_icon::build_info::git_remote_url << "\n"
+                    << "git hash: " << jfc::wanikani_reviews_icon::build_info::git_commit << "\n"
+                    << "build date: " << jfc::wanikani_reviews_icon::build_info::git_date << "\n";
             }
         }
     }
